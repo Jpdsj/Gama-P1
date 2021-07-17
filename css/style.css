@@ -1,0 +1,194 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vars */
+
+:root {
+  /* colors */    
+  --base-color: #4DA167;
+  --base-color-2: #5aaf75;
+  --text-color: rgba(147, 151, 159, 100%);
+  --text-color-light: hsl(0 0% 98%);  
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  background-image: url('../assets/img/violao.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  background-color: rgb(0,0,0,0.8);
+}
+
+/* Logo */
+
+.logo {
+  font: 700 2rem 'Poppins', sans-serif;
+  color: var(--text-color-light);  
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--text-color-light);
+}
+
+/* Menu */
+header {
+  height: 10%;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu {
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+nav .menu ul {
+  display: flex;
+  gap: 4rem;
+}
+
+nav .menu ul li a {
+  color: var(--text-color-light);
+  transition: .3s;
+}
+
+nav .menu ul li a:hover {
+  color: var(--base-color-2);
+}
+
+div .titulo{
+  width: auto;
+  height: 30%; 
+}
+
+h1 {
+  font: 500 3.5rem 'Poppins', sans-serif;
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+  padding: 60px 0px 0px 0px;
+}
+
+p {
+  font: 700 1.5rem 'Poppins', sans-serif;
+  position: relative;
+  color: var(--text-color);
+  text-align: center;
+}
+
+div .countdown{
+  width: 50%;
+  height: 30%;
+  font: 400 2rem 'Poppins', sans-serif;
+  color: var(--text-color);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 25%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font: 500 3rem 'Poppins', sans-serif; 
+}
+
+small {
+  font: 400 1.5rem 'Poppins', sans-serif;  
+}
+
+footer {  
+  position: relative;
+  height: 30%;
+}
+
+footer p {
+  font: 400 1rem 'Poppins', sans-serif;
+  padding: 30px 0px 30px 0px;
+}
+
+div .form, .button {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+  border: none;
+  height: 2rem;
+  width: 16rem;
+  font-size: .8rem;
+  border: .001rem solid white;
+}
+
+button {
+  border-radius: .3rem;
+  border: none;
+  height: 2rem;
+  width: 16rem;
+  font-size: .8rem;
+  border: .001rem solid white;
+}
+
+input {
+  padding: 0 .5rem;
+}
+
+input:focus{
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.btn {
+  background: var(--base-color);
+  border: none;
+  color: white;
+  transition: filter .3s;
+}
+
+.btn:hover {
+  filter: brightness(1.2)
+}
